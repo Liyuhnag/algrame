@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1] ?? 'algrame'
-const base = process.env.GITHUB_ACTIONS === 'true' ? `/${repoName}/` : '/'
+const base = process.env.GITHUB_REPOSITORY ? `/${repoName}/` : '/'
 
 export default defineConfig({
   base,
@@ -9,6 +9,7 @@ export default defineConfig({
   title: '阿航的学习笔记',
   description: '算法题解、Java 后端面试与知识复盘',
   cleanUrls: true,
+  srcExclude: ['superpowers/**'],
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },

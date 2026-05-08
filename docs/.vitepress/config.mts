@@ -8,7 +8,7 @@ export default defineConfig({
   lang: 'zh-CN',
   title: '阿航的学习笔记',
   description: '算法题解、Java 后端面试与知识复盘',
-  cleanUrls: true,
+  cleanUrls: false,
   srcExclude: ['superpowers/**'],
   themeConfig: {
     nav: [

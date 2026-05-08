@@ -4,60 +4,34 @@ outline: deep
 
 # 面试题库
 
-这里用于整理 Java 后端面试题和对应答案。每个问题建议同时记录：标准回答、追问方向、容易混淆的点和项目中如何落地。
+这里用于整理 Java 后端面试题和对应答案。建议每个问题都按统一结构沉淀：标准回答、追问方向、容易混淆的点、项目中的落地场景。
 
-## Java 基础
+## 分类导航
 
-### HashMap 为什么线程不安全？
+- [Java 基础](/interview/java-basic)
+- [Java 集合类](/interview/java-collections)
+- [JUC 并发编程](/interview/juc)
+- [JVM](/interview/jvm)
+- [Spring](/interview/spring)
+- [MySQL](/interview/mysql)
+- [Redis](/interview/redis)
+- [消息队列](/interview/message-queue)
 
-HashMap 的结构修改没有同步保护，多线程同时 `put` 时可能出现数据覆盖、链表或树结构状态不一致、扩容期间数据迁移异常等问题。面试回答时不要只说“线程不安全”，要说清楚问题来自并发写和扩容迁移。
+## 整理原则
 
-::: tip 回答思路
-先说明 HashMap 适合单线程或外部同步场景，再对比 ConcurrentHashMap 的分段或节点级并发控制。
-:::
+- 先写一句话结论，再展开原理，避免回答时一上来陷入细节。
+- 能区分概念相近的内容要主动对比，比如 `synchronized` 和 `ReentrantLock`、`HashMap` 和 `ConcurrentHashMap`。
+- 面试题不只背定义，要补充适用场景、优缺点和项目实践。
 
-### 什么是 Java 中的线程同步？有哪些实现方式？
+## 推荐顺序
 
-线程同步是指在多线程环境下，通过一定的机制控制多个线程对共享资源的访问顺序和访问方式，保证结果的正确性，避免出现竞态条件、数据不一致等问题。它的核心不仅是“同一时刻只允许一个线程进入临界区”，还包括线程之间的协作与执行时机控制。
+如果按复习优先级推进，建议先整理：
 
-面试时可以这样回答：
-
-::: tip 标准回答
-Java 中的线程同步，本质上是为了保证共享资源在并发访问场景下的正确性，核心目标包括原子性、可见性和有序性。常见的实现方式主要有三类。
-
-第一类是 `synchronized`。它是 Java 提供的内置锁，可以直接修饰实例方法、静态方法或者代码块，由 JVM 帮我们完成加锁和释放锁，写法简单，而且是可重入的，适合大多数基础同步场景。
-
-第二类是 `Lock` 接口及其实现类，比如 `ReentrantLock`。它需要手动调用 `lock()` 和 `unlock()`，通常会配合 `try-finally` 使用。相比 `synchronized`，它的灵活性更高，支持可中断锁、超时获取锁、公平锁以及多个 `Condition` 条件队列，适合更复杂的并发控制。
-
-第三类是 JUC 提供的原子类和并发同步工具。原子类如 `AtomicInteger`、`AtomicLong`，底层基于 CAS，适合做单个共享变量的无锁原子更新。并发同步工具如 `CountDownLatch`、`CyclicBarrier`、`Semaphore`，更适合做线程协作控制，比如等待一组线程执行完成、让多个线程同时开始，或者限制同一时刻可访问某资源的线程数量。
-
-需要注意的是，`CountDownLatch`、`CyclicBarrier`、`Semaphore` 严格来说不是原子类，而是并发同步工具。
-:::
-
-::: tip 高频追问
-如果面试官继续问 `synchronized` 和 `ReentrantLock` 的区别，可以重点回答两点：一是 `synchronized` 由 JVM 自动释放锁，使用更简单；二是 `ReentrantLock` 功能更丰富，适合需要可中断、超时控制或公平锁的场景。
-:::
-
-## JVM
-
-JVM 方向建议重点整理类加载、运行时内存区域、垃圾回收、对象创建过程和常见线上排查命令。
-
-### 什么时候对象会进入老年代？
-
-常见原因包括对象年龄达到阈值、大对象直接分配、Minor GC 后 Survivor 空间不足，以及动态年龄判断触发提前晋升。
-
-## MySQL
-
-MySQL 问题建议围绕索引、事务、锁、MVCC、执行计划和慢 SQL 优化组织。
-
-::: warning 高频追问
-解释 MVCC 时需要把 undo log、ReadView、事务隔离级别放在一起讲，否则容易只背概念。
-:::
-
-## Redis
-
-Redis 方向建议沉淀数据结构、缓存穿透/击穿/雪崩、持久化、过期策略、分布式锁和集群模式。
-
-## Spring
-
-Spring 方向建议整理 IOC、AOP、Bean 生命周期、事务传播机制、循环依赖和 Spring MVC 请求流程。
+1. Java 基础
+2. Java 集合类
+3. JUC 并发编程
+4. JVM
+5. Spring
+6. MySQL
+7. Redis
+8. 消息队列

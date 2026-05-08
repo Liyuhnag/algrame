@@ -35,11 +35,14 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '题库总览', link: '/interview/' },
-          { text: 'Java 基础', link: '/interview/#java-基础' },
-          { text: 'JVM', link: '/interview/#jvm' },
-          { text: 'MySQL', link: '/interview/#mysql' },
-          { text: 'Redis', link: '/interview/#redis' },
-          { text: 'Spring', link: '/interview/#spring' }
+          { text: 'Java 基础', link: '/interview/java-basic/' },
+          { text: 'Java 集合类', link: '/interview/java-collections/' },
+          { text: 'JUC', link: '/interview/juc/' },
+          { text: 'JVM', link: '/interview/jvm/' },
+          { text: 'Spring', link: '/interview/spring/' },
+          { text: 'MySQL', link: '/interview/mysql/' },
+          { text: 'Redis', link: '/interview/redis/' },
+          { text: '消息队列', link: '/interview/message-queue/' }
         ]
       },
       {

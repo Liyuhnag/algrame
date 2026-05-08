@@ -1,0 +1,7 @@
+.claude
+.DS_Store
+.superpowers
+node_modules
+docs/.vitepress/.temp
+docs/.vitepress/cache
+docs/.vitepress/dist

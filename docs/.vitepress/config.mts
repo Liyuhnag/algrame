@@ -46,10 +46,14 @@ export default defineConfig({
         ]
       },
       {
-        text: '复盘与专题',
+        text: '专题与专栏',
         collapsed: false,
         items: [
           { text: '专题索引', link: '/topics/' },
+          { text: '设计模式专栏', link: '/topics/design-patterns/' },
+          { text: '设计原则与思想', link: '/topics/design-patterns/principles/' },
+          { text: '设计模式与范式', link: '/topics/design-patterns/patterns-and-paradigms/' },
+          { text: '开源与项目实战', link: '/topics/design-patterns/open-source-and-project-practice/' },
           { text: '项目追问', link: '/topics/#项目追问' },
           { text: '场景设计', link: '/topics/#场景设计' }
         ]

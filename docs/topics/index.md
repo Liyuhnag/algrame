@@ -6,15 +6,6 @@ outline: deep
 
 专题页用于把算法题解和面试题库中反复出现的知识点串起来，形成阶段复习路线。
 
-## 设计模式专栏
-
-设计模式专栏用于系统整理设计原则、常见模式以及开源框架中的落地实践，目标是把“会背概念”升级为“能结合代码和项目解释设计取舍”。
-
-- [专栏总览](/topics/design-patterns/)
-- [设计原则与思想](/topics/design-patterns/principles)
-- [设计模式与范式](/topics/design-patterns/patterns-and-paradigms)
-- [开源与项目实战](/topics/design-patterns/open-source-and-project-practice)
-
 ## 项目追问
 
 项目追问记录自己项目里最容易被问深的部分。每个专题建议包含：

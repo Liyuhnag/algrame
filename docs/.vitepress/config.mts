@@ -15,6 +15,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '算法题解', link: '/algorithms/' },
       { text: '面试题库', link: '/interview/' },
+      { text: '设计模式', link: '/design-patterns/' },
       { text: '专题索引', link: '/topics/' }
     ],
 
@@ -46,14 +47,45 @@ export default defineConfig({
         ]
       },
       {
-        text: '专题与专栏',
+        text: '设计模式',
+        collapsed: false,
+        items: [
+          { text: '专栏总览', link: '/design-patterns/' },
+          {
+            text: '设计原则与思想',
+            collapsed: false,
+            items: [
+              { text: '栏目总览', link: '/design-patterns/principles-and-thinking/' },
+              { text: '设计原则', link: '/design-patterns/principles-and-thinking/principles/' },
+              { text: '规范与重构', link: '/design-patterns/principles-and-thinking/specification-and-refactoring/' }
+            ]
+          },
+          {
+            text: '模式与范式',
+            collapsed: false,
+            items: [
+              { text: '栏目总览', link: '/design-patterns/patterns-and-paradigms/' },
+              { text: '创建型模式', link: '/design-patterns/patterns-and-paradigms/creational/' },
+              { text: '结构型模式', link: '/design-patterns/patterns-and-paradigms/structural/' },
+              { text: '行为型模式', link: '/design-patterns/patterns-and-paradigms/behavioral/' }
+            ]
+          },
+          {
+            text: '开源与项目实战',
+            collapsed: false,
+            items: [
+              { text: '栏目总览', link: '/design-patterns/open-source-and-project-practice/' },
+              { text: '开源实战', link: '/design-patterns/open-source-and-project-practice/open-source-practice/' },
+              { text: '项目实战', link: '/design-patterns/open-source-and-project-practice/project-practice/' }
+            ]
+          }
+        ]
+      },
+      {
+        text: '专题索引',
         collapsed: false,
         items: [
           { text: '专题索引', link: '/topics/' },
-          { text: '设计模式专栏', link: '/topics/design-patterns/' },
-          { text: '设计原则与思想', link: '/topics/design-patterns/principles/' },
-          { text: '设计模式与范式', link: '/topics/design-patterns/patterns-and-paradigms/' },
-          { text: '开源与项目实战', link: '/topics/design-patterns/open-source-and-project-practice/' },
           { text: '项目追问', link: '/topics/#项目追问' },
           { text: '场景设计', link: '/topics/#场景设计' }
         ]

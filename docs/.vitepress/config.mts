@@ -56,7 +56,14 @@ export default defineConfig({
             collapsed: false,
             items: [
               { text: '栏目总览', link: '/design-patterns/principles-and-thinking/index.html' },
-              { text: '设计原则', link: '/design-patterns/principles-and-thinking/principles/index.html' },
+              {
+                text: '设计原则',
+                collapsed: false,
+                items: [
+                  { text: '目录总览', link: '/design-patterns/principles-and-thinking/principles/index.html' },
+                  { text: '单一职责原则', link: '/design-patterns/principles-and-thinking/principles/单一职责原则.md' }
+                ]
+              },
               { text: '规范与重构', link: '/design-patterns/principles-and-thinking/specification-and-refactoring/index.html' }
             ]
           },

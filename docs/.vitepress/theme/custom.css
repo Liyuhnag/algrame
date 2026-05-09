@@ -14,6 +14,24 @@
   --vp-c-divider: #e4ebe1;
   --vp-font-family-base: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", system-ui, sans-serif;
   --vp-font-family-mono: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  --vp-code-bg: #edf4ea;
+  --vp-code-color: #166534;
+  --vp-code-block-bg: #f3f8f1;
+  --vp-code-block-color: #203126;
+  --vp-code-block-divider-color: #d9e4d7;
+  --vp-code-lang-color: #6f816b;
+  --vp-code-line-highlight-color: rgba(21, 128, 61, 0.08);
+  --vp-code-line-number-color: #93a28d;
+  --vp-code-copy-code-border-color: #d6e1d4;
+  --vp-code-copy-code-bg: rgba(255, 255, 255, 0.86);
+  --vp-code-copy-code-hover-border-color: #bfd0ba;
+  --vp-code-copy-code-hover-bg: #ffffff;
+  --vp-code-copy-code-active-text: #4c5c48;
+  --vp-code-tab-bg: #eef5eb;
+  --vp-code-tab-text-color: #5a6b55;
+  --vp-code-tab-hover-text-color: #203126;
+  --vp-code-tab-active-text-color: #166534;
+  --vp-code-tab-active-bar-color: #22c55e;
   --ah-c-surface: #ffffff;
   --ah-c-ink: #17231b;
   --ah-c-muted: #64745d;
@@ -37,6 +55,24 @@
   --vp-c-text-3: #8fa28c;
   --vp-c-border: #263628;
   --vp-c-divider: #213224;
+  --vp-code-bg: #1a281d;
+  --vp-code-color: #9ee6b4;
+  --vp-code-block-bg: #162119;
+  --vp-code-block-color: #d4e5d6;
+  --vp-code-block-divider-color: #29402d;
+  --vp-code-lang-color: #8ea58f;
+  --vp-code-line-highlight-color: rgba(134, 239, 172, 0.08);
+  --vp-code-line-number-color: #6f876f;
+  --vp-code-copy-code-border-color: #325038;
+  --vp-code-copy-code-bg: rgba(23, 37, 27, 0.92);
+  --vp-code-copy-code-hover-border-color: #45684b;
+  --vp-code-copy-code-hover-bg: #203126;
+  --vp-code-copy-code-active-text: #d4e5d6;
+  --vp-code-tab-bg: #18251c;
+  --vp-code-tab-text-color: #97ab97;
+  --vp-code-tab-hover-text-color: #e8f3e8;
+  --vp-code-tab-active-text-color: #9ee6b4;
+  --vp-code-tab-active-bar-color: #86efac;
   --ah-c-surface: #152219;
   --ah-c-ink: #e8f3e8;
   --ah-c-muted: #b5c5b2;
@@ -121,6 +157,40 @@ body {
 
 .VPDoc.has-aside .content-container {
   max-width: 760px !important;
+}
+
+.vp-doc div[class*='language-'] {
+  border: 1px solid var(--vp-code-block-divider-color);
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(23, 35, 27, 0.06);
+  overflow: hidden;
+}
+
+.dark .vp-doc div[class*='language-'] {
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
+}
+
+.vp-doc .vp-code-group .tabs {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.vp-doc .vp-code-group .tabs label {
+  font-weight: 700;
+}
+
+.vp-doc [class*='language-'] pre {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.vp-doc [class*='language-'] > span.lang {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.vp-doc [class*='language-'] > button.copy {
+  border-radius: 8px;
 }
 
 .VPHome {

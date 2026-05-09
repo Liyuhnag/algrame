@@ -8,6 +8,6 @@ outline: deep
 
 ## 子目录
 
-- [创建型模式](/design-patterns/patterns-and-paradigms/creational/)
-- [结构型模式](/design-patterns/patterns-and-paradigms/structural/)
-- [行为型模式](/design-patterns/patterns-and-paradigms/behavioral/)
+- [创建型模式](/design-patterns/patterns-and-paradigms/creational/index.html)
+- [结构型模式](/design-patterns/patterns-and-paradigms/structural/index.html)
+- [行为型模式](/design-patterns/patterns-and-paradigms/behavioral/index.html)

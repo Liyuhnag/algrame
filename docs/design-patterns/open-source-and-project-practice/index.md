@@ -8,5 +8,5 @@ outline: deep
 
 ## 子目录
 
-- [开源实战](/design-patterns/open-source-and-project-practice/open-source-practice/)
-- [项目实战](/design-patterns/open-source-and-project-practice/project-practice/)
+- [开源实战](/design-patterns/open-source-and-project-practice/open-source-practice/index.html)
+- [项目实战](/design-patterns/open-source-and-project-practice/project-practice/index.html)

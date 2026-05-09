@@ -8,9 +8,9 @@ outline: deep
 
 ## 栏目结构
 
-- [设计原则与思想](/design-patterns/principles-and-thinking/)
-- [模式与范式](/design-patterns/patterns-and-paradigms/)
-- [开源与项目实战](/design-patterns/open-source-and-project-practice/)
+- [设计原则与思想](/design-patterns/principles-and-thinking/index.html)
+- [模式与范式](/design-patterns/patterns-and-paradigms/index.html)
+- [开源与项目实战](/design-patterns/open-source-and-project-practice/index.html)
 
 ## 学习目标
 

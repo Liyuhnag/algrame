@@ -8,5 +8,5 @@ outline: deep
 
 ## 子目录
 
-- [设计原则](/design-patterns/principles-and-thinking/principles/)
-- [规范与重构](/design-patterns/principles-and-thinking/specification-and-refactoring/)
+- [设计原则](/design-patterns/principles-and-thinking/principles/index.html)
+- [规范与重构](/design-patterns/principles-and-thinking/specification-and-refactoring/index.html)

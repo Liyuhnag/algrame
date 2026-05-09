@@ -432,15 +432,19 @@ body {
 }
 
 .vp-doc div[class*='language-'] {
-  border: 1px solid rgba(216, 248, 223, 0.12);
-  border-radius: 8px;
-  background: var(--ah-c-code);
-  box-shadow: 0 14px 34px rgba(7, 17, 11, 0.18);
+  border: 1px solid var(--vp-code-block-divider-color);
+  border-radius: 14px;
+  background: var(--vp-code-block-bg);
+  box-shadow: 0 12px 30px rgba(23, 35, 27, 0.06);
 }
 
 .vp-doc div[class*='language-'] code {
   font-size: 14px;
   line-height: 1.8;
+}
+
+.dark .vp-doc div[class*='language-'] {
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
 }
 
 .vp-doc :not(pre) > code {

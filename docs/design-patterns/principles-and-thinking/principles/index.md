@@ -14,3 +14,7 @@ outline: deep
 - 面向接口编程
 - 高内聚、低耦合
 - 迪米特法则
+
+## 已整理文章
+
+- [单一职责原则](/design-patterns/principles-and-thinking/principles/单一职责原则.md)

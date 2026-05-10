@@ -16,6 +16,7 @@ export default defineConfig({
       { text: '算法题解', link: '/algorithms/' },
       { text: '面试题库', link: '/interview/' },
       { text: '设计模式', link: '/design-patterns/index.html' },
+      { text: '操作系统', link: '/operating-system/index.html' },
       { text: '专题索引', link: '/topics/' }
     ],
 
@@ -86,6 +87,16 @@ export default defineConfig({
               { text: '项目实战', link: '/design-patterns/open-source-and-project-practice/project-practice/index.html' }
             ]
           }
+        ]
+      },
+      {
+        text: '操作系统',
+        collapsed: false,
+        items: [
+          { text: '专栏总览', link: '/operating-system/index.html' },
+          { text: '绪论', link: '/operating-system/introduction/index.html' },
+          { text: '虚拟化', link: '/operating-system/virtualization/index.html' },
+          { text: '并发', link: '/operating-system/concurrency/index.html' }
         ]
       },
       {

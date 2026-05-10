@@ -6,7 +6,7 @@ const base = process.env.GITHUB_REPOSITORY ? `/${repoName}/` : '/'
 export default defineConfig({
   base,
   lang: 'zh-CN',
-  title: '阿航的学习笔记',
+  title: '阿航的沉淀网站',
   description: '算法题解、Java 后端面试与知识复盘',
   cleanUrls: false,
   srcExclude: ['superpowers/**'],

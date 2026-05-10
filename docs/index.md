@@ -2,9 +2,9 @@
 layout: home
 
 hero:
-  name: 阿航的学习笔记
-  text: 算法、后端、设计与系统
-  tagline: 把算法题解、Java 后端知识、设计模式、操作系统和专题复盘整理成一套可持续扩展的学习地图。
+  name: 阿航的沉淀网站
+  text: 后端工程师的沉淀
+  tagline: 时间如白驹过隙，愿你我都能做生活的高手
   actions:
     - theme: brand
       text: 查看算法题解

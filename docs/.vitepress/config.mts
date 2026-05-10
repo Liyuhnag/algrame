@@ -7,15 +7,15 @@ export default defineConfig({
   base,
   lang: 'zh-CN',
   title: '阿航的沉淀网站',
-  description: '算法题解、Java 后端面试与知识复盘',
+  description: '算法、后端、设计模式、操作系统与专题手记的学习沉淀',
   cleanUrls: false,
   srcExclude: ['superpowers/**'],
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: '算法题解', link: '/algorithms/' },
+      { text: '算法随记', link: '/algorithms/' },
       {
-        text: '后端知识',
+        text: '技术专栏',
         items: [
           { text: 'Java 基础', link: '/java-basic/' },
           { text: 'Java 集合类', link: '/java-collections/' },
@@ -28,68 +28,32 @@ export default defineConfig({
       },
       { text: '设计模式', link: '/design-patterns/index.html' },
       { text: '操作系统', link: '/operating-system/index.html' },
-      { text: '专题索引', link: '/topics/' }
+      { text: '专题手记', link: '/topics/' }
     ],
 
     sidebar: [
       {
-        text: '算法题解',
+        text: '算法随记',
         collapsed: false,
         items: [
-          { text: '题解总览', link: '/algorithms/' },
-          { text: '每日刷题', link: '/algorithms/#每日刷题' },
+          { text: '专栏总览', link: '/algorithms/' },
+          { text: '每日记录', link: '/algorithms/#每日记录' },
           { text: '动态规划', link: '/algorithms/#动态规划' },
           { text: '二叉树', link: '/algorithms/#二叉树' },
           { text: '图论', link: '/algorithms/#图论' }
         ]
       },
       {
-        text: 'Java 基础',
+        text: '技术专栏',
         collapsed: false,
         items: [
-          { text: '栏目总览', link: '/java-basic/index.html' }
-        ]
-      },
-      {
-        text: 'Java 集合类',
-        collapsed: false,
-        items: [
-          { text: '栏目总览', link: '/java-collections/index.html' }
-        ]
-      },
-      {
-        text: 'MySQL',
-        collapsed: false,
-        items: [
-          { text: '栏目总览', link: '/mysql/index.html' }
-        ]
-      },
-      {
-        text: 'Redis',
-        collapsed: false,
-        items: [
-          { text: '栏目总览', link: '/redis/index.html' }
-        ]
-      },
-      {
-        text: '消息队列',
-        collapsed: false,
-        items: [
-          { text: '栏目总览', link: '/message-queue/index.html' }
-        ]
-      },
-      {
-        text: 'JVM',
-        collapsed: false,
-        items: [
-          { text: '栏目总览', link: '/jvm/index.html' }
-        ]
-      },
-      {
-        text: 'JUC',
-        collapsed: false,
-        items: [
-          { text: '栏目总览', link: '/juc/index.html' }
+          { text: 'Java 基础', link: '/java-basic/index.html' },
+          { text: 'Java 集合类', link: '/java-collections/index.html' },
+          { text: 'MySQL', link: '/mysql/index.html' },
+          { text: 'Redis', link: '/redis/index.html' },
+          { text: '消息队列', link: '/message-queue/index.html' },
+          { text: 'JVM', link: '/jvm/index.html' },
+          { text: 'JUC', link: '/juc/index.html' }
         ]
       },
       {
@@ -145,11 +109,11 @@ export default defineConfig({
         ]
       },
       {
-        text: '专题索引',
+        text: '专题手记',
         collapsed: false,
         items: [
-          { text: '专题索引', link: '/topics/' },
-          { text: '项目追问', link: '/topics/#项目追问' },
+          { text: '专栏总览', link: '/topics/' },
+          { text: '项目复盘', link: '/topics/#项目复盘' },
           { text: '场景设计', link: '/topics/#场景设计' }
         ]
       }

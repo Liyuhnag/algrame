@@ -3,36 +3,36 @@ layout: home
 
 hero:
   name: 阿航的沉淀网站
-  text: 后端工程师的沉淀
-  tagline: 时间如白驹过隙，愿你我都能做生活的高手
+  text: 后端工程师的学习沉淀
+  tagline: 记录问题，整理知识，复盘实践，也顺手把成长路径留在这里。
   actions:
     - theme: brand
-      text: 查看算法题解
+      text: 浏览算法随记
       link: /algorithms/
     - theme: alt
-      text: 浏览后端栏目
+      text: 查看技术专栏
       link: /java-basic/
 
 features:
-  - title: 算法题解
-    details: 从每日刷题到专题方法，把解题思路、复杂度分析和高频坑点沉淀成可复习的题解库。
+  - title: 算法随记
+    details: 记录刷题过程里的思路变化、模板积累和边界条件复盘，不只保留答案，也保留题感。
     link: /algorithms/
-  - title: Java 与集合
-    details: 以 Java 基础和集合体系为入口，整理语言特性、集合结构与常见面试问题。
+  - title: Java 与后端
+    details: 从 Java 基础、集合到 JUC 与 JVM，把后端开发中最常用的知识线逐步串成体系。
     link: /java-basic/
-  - title: 并发与 JVM
-    details: 覆盖 JUC 并发编程与 JVM 核心机制，打通线程、内存模型、类加载和 GC 这条主线。
-    link: /juc/
   - title: MySQL、Redis、消息队列
-    details: 聚焦数据库、缓存和异步消息链路，把后端中间件知识按场景串起来。
+    details: 围绕数据库、缓存和异步链路，整理真正和业务实现强相关的中间件知识。
     link: /mysql/
+  - title: 并发与 JVM
+    details: 把线程、内存模型、类加载和 GC 这些容易割裂的知识点重新放回一条主线上。
+    link: /juc/
   - title: 设计模式
-    details: 从设计原则、模式分类到开源和项目实战，构建一套可迁移的设计思维框架。
+    details: 从设计原则到开源实战，不把模式当术语表，而是当成可迁移的思考方式。
     link: /design-patterns/index.html
   - title: 操作系统
-    details: 以绪论、虚拟化、并发三条主线，系统整理操作系统知识与工程理解。
+    details: 以绪论、虚拟化、并发三条主线，把底层原理和工程理解慢慢补扎实。
     link: /operating-system/index.html
-  - title: 专题索引
-    details: 把零散的题解、知识点和项目经验串成专题路线，便于阶段复习与查漏补缺。
+  - title: 专题手记
+    details: 用项目复盘和场景设计把零散知识重新组织起来，留下阶段性思考和方法论。
     link: /topics/
 ---

@@ -8,14 +8,13 @@ outline: deep
 
 ## 分类导航
 
-- [Java 基础](/interview/java-basic)
-- [Java 集合类](/interview/java-collections)
-- [JUC 并发编程](/interview/juc)
-- [JVM](/interview/jvm)
-- [Spring](/interview/spring)
-- [MySQL](/interview/mysql)
-- [Redis](/interview/redis)
-- [消息队列](/interview/message-queue)
+- [Java 基础](/interview/java-basic/index.html)
+- [Java 集合类](/interview/java-collections/index.html)
+- [JUC 并发编程](/interview/juc/index.html)
+- [JVM](/interview/jvm/index.html)
+- [MySQL](/interview/mysql/index.html)
+- [Redis](/interview/redis/index.html)
+- [消息队列](/interview/message-queue/index.html)
 
 ## 整理原则
 
@@ -31,7 +30,6 @@ outline: deep
 2. Java 集合类
 3. JUC 并发编程
 4. JVM
-5. Spring
-6. MySQL
-7. Redis
-8. 消息队列
+5. MySQL
+6. Redis
+7. 消息队列

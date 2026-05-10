@@ -14,7 +14,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '算法题解', link: '/algorithms/' },
-      { text: '面试题库', link: '/interview/' },
+      { text: 'Java 基础', link: '/java-basic/index.html' },
       { text: '设计模式', link: '/design-patterns/index.html' },
       { text: '操作系统', link: '/operating-system/index.html' },
       { text: '专题索引', link: '/topics/' }
@@ -33,17 +33,52 @@ export default defineConfig({
         ]
       },
       {
-        text: '面试题库',
+        text: 'Java 基础',
         collapsed: false,
         items: [
-          { text: '题库总览', link: '/interview/' },
-          { text: 'Java 基础', link: '/interview/java-basic/index.html' },
-          { text: 'Java 集合类', link: '/interview/java-collections/index.html' },
-          { text: 'MySQL', link: '/interview/mysql/index.html' },
-          { text: 'Redis', link: '/interview/redis/index.html' },
-          { text: '消息队列', link: '/interview/message-queue/index.html' },
-          { text: 'JVM', link: '/interview/jvm/index.html' },
-          { text: 'JUC', link: '/interview/juc/index.html' }
+          { text: '栏目总览', link: '/java-basic/index.html' }
+        ]
+      },
+      {
+        text: 'Java 集合类',
+        collapsed: false,
+        items: [
+          { text: '栏目总览', link: '/java-collections/index.html' }
+        ]
+      },
+      {
+        text: 'MySQL',
+        collapsed: false,
+        items: [
+          { text: '栏目总览', link: '/mysql/index.html' }
+        ]
+      },
+      {
+        text: 'Redis',
+        collapsed: false,
+        items: [
+          { text: '栏目总览', link: '/redis/index.html' }
+        ]
+      },
+      {
+        text: '消息队列',
+        collapsed: false,
+        items: [
+          { text: '栏目总览', link: '/message-queue/index.html' }
+        ]
+      },
+      {
+        text: 'JVM',
+        collapsed: false,
+        items: [
+          { text: '栏目总览', link: '/jvm/index.html' }
+        ]
+      },
+      {
+        text: 'JUC',
+        collapsed: false,
+        items: [
+          { text: '栏目总览', link: '/juc/index.html' }
         ]
       },
       {

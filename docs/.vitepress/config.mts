@@ -14,7 +14,18 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '算法题解', link: '/algorithms/' },
-      { text: 'Java 基础', link: '/java-basic/index.html' },
+      {
+        text: '后端知识',
+        items: [
+          { text: 'Java 基础', link: '/java-basic/' },
+          { text: 'Java 集合类', link: '/java-collections/' },
+          { text: 'MySQL', link: '/mysql/' },
+          { text: 'Redis', link: '/redis/' },
+          { text: '消息队列', link: '/message-queue/' },
+          { text: 'JVM', link: '/jvm/' },
+          { text: 'JUC', link: '/juc/' }
+        ]
+      },
       { text: '设计模式', link: '/design-patterns/index.html' },
       { text: '操作系统', link: '/operating-system/index.html' },
       { text: '专题索引', link: '/topics/' }

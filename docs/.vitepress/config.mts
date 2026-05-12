@@ -113,6 +113,15 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '专栏总览', link: '/topics/' },
+          {
+            text: '鉴权专题',
+            collapsed: false,
+            items: [
+              { text: '专题总览', link: '/topics/auth/index.html' },
+              { text: '认证授权设计', link: '/topics/auth/认证授权设计.html' },
+              { text: '如何防止 CSRF 攻击', link: '/topics/auth/如何防止CSRF攻击.html' }
+            ]
+          },
           { text: '项目复盘', link: '/topics/#项目复盘' },
           { text: '场景设计', link: '/topics/#场景设计' }
         ]
